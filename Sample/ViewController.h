@@ -11,6 +11,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class SelfSizingWaterfallCollectionViewLayout;
+
 @interface ViewController : UIViewController
 
 @end
