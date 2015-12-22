@@ -14,6 +14,7 @@
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 #import "SupplementaryNode.h"
 #import "ItemNode.h"
+#import "SelfSizingWaterfallCollectionViewLayout.h"
 
 @interface ViewController () <ASCollectionViewDataSource, ASCollectionViewDelegateFlowLayout>
 {
@@ -33,7 +34,7 @@
   if (!(self = [super init]))
     return nil;
   
-  UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+  SelfSizingWaterfallCollectionViewLayout *layout = [[SelfSizingWaterfallCollectionViewLayout alloc] init];
   layout.headerReferenceSize = CGSizeMake(50.0, 50.0);
   layout.footerReferenceSize = CGSizeMake(50.0, 50.0);
   
